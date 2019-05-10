@@ -1,0 +1,23 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div align="center" class="body">{% with messages = get_flashed_messages() %}
+   {% if messages %}
+      <!-- {% for message in messages %} -->
+         {{ message }}
+      <!-- {% endfor %} -->
+   {% endif %}
+{% endwith %}
+<h2>{{ret}}</h2>
+</div>
+
+	
+<div align="center"><a href="/logout"><button>Logout</button></a></div>
+
+</body>
+</html>
